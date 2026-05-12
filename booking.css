@@ -1,0 +1,157 @@
+/* --- NAVBAR STYLING --- */
+.navbar__links:hover {
+    color: #fff !important;
+    transition: 0.3s ease;
+}
+
+#navbar__logo:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+/* Ensure the booking container doesn't touch the navbar */
+.booking-container {
+    margin-top: 40px !important;
+}
+
+.booking-container {
+    display: flex; /* This is the magic line */
+    flex-direction: row; /* Forces side-by-side */
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    gap: 60px; /* Adds space between seats and form */
+}
+
+/* --- SEATING CHART STYLES --- */
+.seating-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seat-legend {
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.seat-legend li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cinema-room {
+    perspective: 1000px; /* Creates a 3D effect for the screen */
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screen {
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 20px rgba(255, 255, 255, 0.7);
+    margin-bottom: 50px;
+}
+
+.seating-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; /* Takes up the remaining space */
+}
+
+.seat-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.seat {
+    background-color: #444;
+    height: 30px;
+    width: 35px;
+    border-radius: 8px 8px 0 0; /* Looks like a chair back */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Create the middle aisle */
+.seat:nth-of-type(4) {
+    margin-right: 30px;
+}
+
+.seat:not(.occupied):hover {
+    transform: scale(1.2);
+}
+
+.seat.selected {
+    background-color: #369e62; /* Your brand green */
+}
+
+.seat.occupied {
+    background-color: #fff;
+    cursor: not-allowed;
+}
+
+/* --- CHECKOUT FORM STYLES --- */
+.checkout-section {
+    background-color: #1a1a1a;
+    padding: 35px;
+    border-radius: 12px;
+    width: 350px; /* Gives the form a fixed, solid width */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column; /* Stacks name, email, and button vertically */
+    gap: 15px;
+}
+
+.booking-form input {
+    width: 100%;
+    padding: 12px;
+    background: #333;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.checkout-btn {
+    width: 100%; /* Makes button fill the width of the form */
+    padding: 15px;
+    background-color: #369e62;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.checkout-btn:hover {
+    background-color: #2b7d4e;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .booking-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

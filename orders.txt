@@ -1,0 +1,3 @@
+NEW BOOKING | Name: Tan | Email: sdhasdiuas@gmail.com | Seats: 2 | Total Paid: RM 50
+NEW BOOKING | Name: Tan | Email: hrtan13@gmail.com | Seats: 2 | Total Paid: RM 50
+NEW BOOKING | Name: Tan | Email: hrtan13@gmail.com | Seats: 1 | Total Paid: RM 25

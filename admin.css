@@ -101,3 +101,140 @@ tr:hover {
     color: #d11a2a !important;
     text-decoration: underline;
 }
+
+/* --- 5. LOGIN PAGE STYLES --- */
+.login-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; /* keeps padding inside */
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #369e62;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #2b7d4e;
+}
+
+/* LOGOUT BUTTON */
+.logout-btn {
+    background-color: #e63946;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #b91c1c;
+}
+
+
+.login-container {
+    background-color: #ffffff; /* Clean white card */
+    padding: 50px 40px;
+    border-radius: 20px; /* Smooth rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Soft, elegant shadow */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid #eaeaea;
+}
+
+.login-title {
+    color: #369e62; /* LeMovie Green */
+    font-size: 28px;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.login-subtitle {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between inputs */
+}
+
+.login-input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Rounded inputs */
+    font-size: 15px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    background-color: #fafafa;
+    transition: 0.3s ease;
+}
+
+.login-input:focus {
+    border-color: #369e62;
+    background-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(54, 158, 98, 0.2); /* Slight green glow on click */
+}
+
+.login-btn {
+    background-color: #369e62;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #2b7d4e;
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.error-msg {
+    color: #e63946;
+    background-color: #ffeef0;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border: 1px solid #ffccd2;
+}

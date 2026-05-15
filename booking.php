@@ -97,7 +97,7 @@ $conn->close();
         }
 
         .seat.occupied {
-            background-color: #fff; 
+            background-color: #ff0000; 
             cursor: not-allowed;
             opacity: 0.3;
         }
@@ -193,6 +193,8 @@ $conn->close();
                     </div>
                 <?php endforeach; ?>
             </div>
+
+            <h3 style="margin-top: 3; letter-spacing: 2px; text-transform: uppercase;">RED SEAT: OCCUPIED, GREY SEAT: AVAILABLE</h3>
         </div>
 
         <div class="checkout-section">

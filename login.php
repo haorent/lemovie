@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     // Replace these with whatever username/password you want
-    if ($username === 'admin' && $password === '12345') {
+    if ($username === 'admin' && $password === '6767googleMaps') {
         $_SESSION['admin_logged_in'] = true;
         header("Location: admin.php"); // Send them to the dashboard
         exit();
